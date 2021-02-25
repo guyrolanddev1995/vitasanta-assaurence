@@ -22,6 +22,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('souscribe', [HomeController::class, 'getSouscribe'])->name('admin.souscribe');
 
     Route::get('/home', [HomeController::class, 'index'])->name('admin.home');
+    Route::get('/', [HomeController::class, 'index'])->name('admin.home');
 });
 
 Auth::routes();
