@@ -48,9 +48,9 @@
                             <td>{{ $souscribe->mont_sousc }}</td>
                             <td width="14%">{{ $souscribe->nom }}</td>
                             <td>{{ $souscribe->phone }}</td>
-                            <td>{{ $souscribe->villeDepart->nom }}</td>
-                            <td>{{ $souscribe->villeArrivee->nom }}</td>
-                            <td>{{ $souscribe->transporteur->nom }}</td>
+                            <td>{{ Str::upper($souscribe->villeDepart->nom) }}</td>
+                            <td>{{ Str::upper($souscribe->villeArrivee->nom) }}</td>
+                            <td>{{ Str::upper($souscribe->transporteur->nom) }}</td>
                             <td>{{ $souscribe->mode_paiement }}</td>
                             <td>{{ $souscribe->ref_paiement }}</td>
                             <td>{{ $souscribe->code_agent }}</td>

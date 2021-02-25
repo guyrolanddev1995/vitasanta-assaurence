@@ -9,6 +9,7 @@ use App\Models\Transporteur;
 use App\Models\Ville;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -79,8 +80,8 @@ class HomeController extends Controller
        }
 
        $api = "kouassibrouricky@gmail.com";
-                $secret = "bRRFsXLaosRJsg4si7*FISNOOM2kyBXGsCjeM1rl"; // Tu renseigne le cle secrete de ton api
-                $msg = "Votre paiement assurence de " .$souscribe->mont_sousc."FCFA a ete effectue avec succes pour le trajet de ". $souscribe->villeDepart->nom ." a ". $souscribe->villeArrivee->nom; // le message à envoyer à l'utilisateur
+                $secret = "bRRFsXLaosRJsg4si7*FISNOOM2kyBXGsCjeM1rl";
+                $msg = "Votre souscription de " .$souscribe->mont_sousc."FCFA a ete effectue avec succes pour le trajet de ". Str::upper($souscribe->villeDepart->nom) ." a ". Str::upper($souscribe->villeArrivee->nom); // le message à envoyer à l'utilisateur
                 $receiver = "225".$souscribe->phone;// le numero de l'utilisateur
                 $sender = "VITASANTE"; // le nom à afficher sur la messagerie d'utilisateur
                 $cltmsgid = 1;
