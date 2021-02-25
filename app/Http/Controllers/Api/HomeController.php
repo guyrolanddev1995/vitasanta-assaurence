@@ -78,9 +78,11 @@ class HomeController extends Controller
            ]);
        }
 
+       dd($souscribe);
+
        $api = "kouassibrouricky@gmail.com";
                 $secret = "bRRFsXLaosRJsg4si7*FISNOOM2kyBXGsCjeM1rl"; // Tu renseigne le cle secrete de ton api
-                $msg = "Votre paiement assurence de $souscribe->montant_sousc a été éffectué avec succès pour le trajet de". $souscribe->villeDepart->nom ." à". $souscribe->villeArrivee; // le message à envoyer à l'utilisateur
+                $msg = "Votre paiement assurence de $souscribe->mont_sousc a été éffectué avec succès pour le trajet de". $souscribe->villeDepart->nom ." à". $souscribe->villeArrivee; // le message à envoyer à l'utilisateur
                 $receiver = "225".$souscribe->phone;// le numero de l'utilisateur
                 $sender = "	VITASANTE"; // le nom à afficher sur la messagerie d'utilisateur
                 $cltmsgid = 1;

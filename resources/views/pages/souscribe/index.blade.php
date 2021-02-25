@@ -45,7 +45,7 @@
                             <td>{{ $key + 1 }}</td>
                             <td width="8%">{{ $souscribe->date_sousc }}</td>
                             <td with="8%">{{ $souscribe->heure_sousc }}</td>
-                            <td>{{ $souscribe->montant_sousc }}</td>
+                            <td>{{ $souscribe->mont_sousc }}</td>
                             <td width="14%">{{ $souscribe->nom }}</td>
                             <td>{{ $souscribe->phone }}</td>
                             <td>{{ $souscribe->villeDepart->nom }}</td>
