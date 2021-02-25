@@ -6,6 +6,8 @@
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
+  <link rel="icon" href="{{ asset('images/logo.jpeg') }}">
+
   <title>VITASANTE</title>
 
   <!-- Tell the browser to be responsive to screen width -->
