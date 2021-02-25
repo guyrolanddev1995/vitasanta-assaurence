@@ -5,11 +5,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Agents
+        Tableau de bord
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Tableau de bord</a></li>
-        <li class="active">Agent</li>
+        <li class="active">Accueil</li>
       </ol>
     </section>
 
