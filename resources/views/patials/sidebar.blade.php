@@ -13,8 +13,8 @@
         </a>
         <ul class="treeview-menu">
           <li><a href="{{ route('admin.souscribe') }}">VOYAGEURS</a></li>
-          <li><a href="{{ route('admin.livreur') }}">LIVREUR</a></li>
-          <li><a href="{{ route('admin.vehicule') }}">VEHICULE</a></li>
+          <li><a href="{{ route('admin.livreur') }}">LIVREURS</a></li>
+          <li><a href="{{ route('admin.vehicule') }}">VEHICULES</a></li>
         </ul>
     </li>
       <li><a href="#"><i class="fa fa-area-chart"></i> <span>STATISTIQUES</span></a></li>
