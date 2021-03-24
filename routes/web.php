@@ -19,7 +19,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::view('ville', 'pages.ville')->name('admin.ville');
     Route::view('transporteur', 'pages.transporteur')->name('admin.transporteur');
     Route::view('agent', 'pages.agent')->name('admin.agent');
-    Route::get('souscribe', [HomeController::class, 'getSouscribe'])->name('admin.souscribe');
+    Route::get('souscribe/voyageur', [HomeController::class, 'getSouscribe'])->name('admin.souscribe');
+
+    Route::get('souscribe/livreur', [HomeController::class, 'getLivreurSouscribe'])->name('admin.livreur');
+    Route::get('souscribe/vehicule', [HomeController::class, 'getVehiculeSouscribe'])->name('admin.vehicule');
 
     Route::get('/home', [HomeController::class, 'index'])->name('admin.home');
     Route::get('/', [HomeController::class, 'index'])->name('admin.home');
